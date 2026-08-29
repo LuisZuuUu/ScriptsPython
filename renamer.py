@@ -2,7 +2,7 @@ import os
 import tkinter as tk 
 
 #Path to the folder where the files will be stored 
-path = r"C:\Users\Recrutamento-05\Desktop\python"
+path = r"Path the files here"
 
 window = tk.Tk()
 window.geometry("300x200")
