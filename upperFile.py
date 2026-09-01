@@ -1,18 +1,18 @@
 import os 
 
-caminho = os.path.dirname(os.path.abspath(__file__))
+path = os.path.dirname(os.path.abspath(__file__))
 
-for file in os.listdir(caminho):
+for file in os.listdir(path):
 
     if not file.endswith(".py"):
 
-        caminhoAnt = os.path.join(caminho, file)
+        oldPath = os.path.join(path, file)
         pureName, extension = os.path.splitext(file)
 
         nameUpper = pureName.upper()
         newName = f"{nameUpper}{extension}"
-        caminhoNovo = os.path.join(caminho, newName)
-        os.rename(caminhoAnt, caminhoNovo)
+        nePath = os.path.join(path, newName)
+        os.rename(oldPath, newPath)
 
 input("\nDa pra dale:" )
     
